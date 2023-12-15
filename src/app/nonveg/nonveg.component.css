@@ -1,0 +1,87 @@
+section{
+  background-image: url("http://localhost:4200/assets/images/s4.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover;
+    background-position: center;
+}
+
+.nonveg{
+    width: 175vh;
+    height: 74vh;
+    background-image: url("http://localhost:4200/assets/images/plum.jpg");  
+    background-repeat: no-repeat;
+    background-size: 100% 110%;
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid purple;
+}
+.navbar{
+  background-color: purple;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  outline: none;
+}
+  .next{
+    background-color: purple;
+    border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  outline: none;
+  }
+  /* Apply styles to table header cells (th) */
+  .nonveg th {
+    background-color: plum;
+    border: 3px solid purple;
+    padding: 8px;
+  }
+  
+  /* Apply styles to table data cells (td) */
+  .nonveg td {
+    border: 3px solid purple;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  /* Add alternating row colors for better readability */
+  .nonveg tbody tr:nth-child(even) {
+    background-color: plum;
+  }
+  
+  /* Apply styles to the update button */
+  .nonveg .btn {
+    margin-top: 5px;
+  }
+  .btn{
+    background-color: plum;
+  }
+  .btn:hover{
+    background-color: plum;
+  }
+  .btn:focus{
+    outline: none;
+  }
+  .wrapper.two {
+    /* background-color: #44107a; */
+    font-size: 6rem;
+    font-family: "Play", sans-serif;
+}
+.neon h2 {
+    margin: 1rem auto;
+    animation: neon 1s ease infinite;
+}
+@keyframes neon {
+    0%,
+    100% {
+        text-shadow: 0 0 10px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 2px #fed128, 2px 2px 2px #806914;
+        color: #f5efcb;
+    }
+    50% {
+        text-shadow: 0 0 2px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 2px #800e0b, 4px 4px 2px #40340a;
+        color: #eda0d3;
+    }
+}
+
+

@@ -1,0 +1,70 @@
+<section>
+    <nav>
+        <div class="logo">
+            <img src="../../assets/images/fu.jpg" >
+        </div>
+        <ul class="next">
+            <!-- <a routerLink="/login"  class="button ">Login</a> &nbsp;&nbsp;&nbsp;
+            <a routerLink="/registration"  class="button ">registration</a> &nbsp;&nbsp;
+            <a routerLink="/recipes"  class="button">Recipe</a> &nbsp;&nbsp;&nbsp;
+            <a routerLink="/veg" class="button">veg</a> &nbsp;&nbsp;&nbsp;
+            <a routerLink="/nonveg"  class="button">Non-veg</a> &nbsp;&nbsp;&nbsp; -->
+            <a routerLink="/homepage" class="button">Logout</a> &nbsp;&nbsp;
+
+        </ul>
+        <!-- <div class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div> -->
+
+
+      </nav><br><br>
+    <div class="update">
+        <div class="col-md-6 mt-2">
+            <form [formGroup]="recipeGroup">
+
+
+
+                <div class="form-group">
+                    <label for="recipe_Id"><b>Recipe_Id</b></label>
+                    <input type="text" formControlName="recipe_Id" [(ngModel)]="this.Data.recipe_Id" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label for="recipe_Name"><b>Recipe_Name</b></label>
+                    <input type="text" formControlName="recipe_Name" [(ngModel)]="this.Data.recipe_Name" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label for="recipe_ingredent
+                    "><b>ingredient</b></label>
+                    <input type="text" formControlName="ingredient" [(ngModel)]="this.Data.ingredient" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label for="procedure
+                  "><b>Recipe_procedure</b></label>
+                  <input type="text" formControlName="procedure" [(ngModel)]="this.Data.procedure" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <!--<label for="exampleInputPassword1" class="form-label">Resume</label>
+                <input type="file" formControlName="resume" class="form-control" accept=".pdf,.doc,.docx" id="exampleInputPassword1"required>
+                <div *ngIf="formValue.invalid && formValue.touched">Required</div> -->
+
+                <label for="recipeimages" class="form-label"><b>RecipeImages</b></label>
+                  <input type="file" id="file" name="file" formControlName="recipeimages" class="form-control" (change)="onFileSelected($event)" accept=".jpg,.png">
+
+              </div>
+
+                <div>
+                    <br>
+                <input type="button" value="Update Profile" (click)="UpdateVeg()" class="btn btn-sm btn-primary" style="outline: none; text-decoration: none; border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: none;"/>
+                <a [routerLink]="['veg']" class="btn2">Back</a> <br><br>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

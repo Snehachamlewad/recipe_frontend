@@ -1,0 +1,140 @@
+nav{
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  right:0;
+  left:0;
+  background:purple;
+  box-shadow: 0 0 10px rgb(0,0,0,0.5);
+  z-index:1000;
+}
+ nav .logo img{
+  width: 100px;
+  height: 70px;
+  cursor: pointer;
+  margin:7px 0;
+  position: relative; 
+   overflow: hidden;
+    border-radius: 50%; } 
+  .logo img { width: 100%; height: auto;
+}
+ nav .next{
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  color:black ;
+  outline: none;
+
+}
+
+ nav .logo .next a:hover{
+  color: var(--pink);
+}
+ nav .next{
+  list-style: none;
+}
+ nav .next a{
+ display: inline-block;
+ margin: 0 15px ;
+ color:#000;
+  outline: none;
+  border: none;
+ text-decoration: none;
+ font-weight: 500;
+ font-size: 17px;
+ transition: 0.1s;
+}
+ nav .next a::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background: plum;
+  display: block;
+  transition: 0.2s linear;
+}
+ nav .next a:hover::after{
+ width: 100%;
+}
+
+nav .next a:hover{
+  color: plum;
+}
+
+
+  nav .icon i{
+   font-size: 18px;
+   color: #000;
+   margin: 0 5px;
+   cursor: pointer;
+   transition: 0.3s;
+  }
+  nav .icon i:hover{
+    color: plum;
+  }
+
+ 
+
+
+
+.non-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("../../assets/images/adddd.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+ 
+.col-md-6 {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+ 
+.error-message {
+  font-size: 0.8em;
+  margin-top: 5px;
+  padding-left: 200px;
+}
+ 
+.btn {
+  margin-bottom: 10px;
+  background-color: purple;
+}
+ .btn:hover{
+  color:#000;
+  background-color: plum;
+
+ }
+ .btn::after{
+  background-color: plum;
+ }
+.form-control {
+  margin-bottom: 10px;
+}
+ 
+.btn2{
+  width: 100px;
+  display: inline-flex;
+  margin-left: 20px;
+  margin-top: 10px;
+  background-color:purple;
+  text-decoration:none;
+  padding: 6px;
+  border-radius: 4px;
+  color: #000;
+
+}
+.btn2:hover{
+  color:#000;
+  background-color: plum;
+  outline: none;
+
+ }
+ .btn2::after{
+  background-color: plum;
+  outline: none;
+ }

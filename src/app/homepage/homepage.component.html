@@ -1,0 +1,72 @@
+<header>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <section id="Home">
+
+        <nav>
+            <div class="logo">
+                <img src="../../assets/images/fu.jpg" >
+            </div>
+            <ul class="next">
+
+                <a routerLink="/login" *ngIf="!status.logged" class="button ">Login</a> &nbsp;&nbsp;&nbsp;
+                <a routerLink="/registration" *ngIf="!status.logged" class="button ">Registration</a> &nbsp;&nbsp;
+                <!-- <a routerLink="/recipes" *ngIf="!status.logged" class="button">Recipe</a> &nbsp;&nbsp;&nbsp; -->
+                <!-- <a routerLink="/homepage" *ngIf="!status.logged" class="button">Back</a> -->
+               <a routerLink="/homepage" *ngIf="status.logged" class="button"></a> &nbsp;&nbsp;
+                <a *ngIf="status.logged">{{username}}</a>
+            </ul>
+
+
+        </nav>
+        <br><br><br>
+        <div class="content">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i>
+                <h6 class="animate-charcter"> Welcome to Online Cooking Recipe Portal,
+                    A taste you'll remember! </h6>
+            </i>
+        </div>
+        <div class="main">
+            <div class="men_text">
+                <h1>Get Delicious <span>Food</span><br> Recipe in Easy Way</h1>
+            </div>
+            <div class="main_image">
+                <img src="../../assets/images/burger.jpg" alt="">
+            </div>
+        </div><br><br>
+
+        <p>A recipe is a set of instructions that describes how to prepare or make something,
+             especially a dish of prepared food. A sub-recipe or subrecipe is a recipe for an ingredient
+             that will be called for in the instructions for the main recipe.
+
+
+</p>
+         <div class="main_btn">
+            <a href="recipes">Recipe Now</a>
+            <i class="fa-solid fa-angle-right"></i>
+         </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <br>
+    <div class="container">
+
+        <br>
+
+        <!-- <div class="row bg-light">
+        <router-outlet></router-outlet>
+        </div> -->
+    </div>
+    <br>
+</header>

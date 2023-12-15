@@ -1,0 +1,63 @@
+<section>
+    <nav>
+        <div class="logo">
+            <img src="../../assets/images/fu.jpg" >
+        </div>
+        <ul class="next">
+            <!-- <a routerLink="/login"  class="button ">Login</a> &nbsp;&nbsp;&nbsp;
+            <a routerLink="/registration"  class="button ">registration</a> &nbsp;&nbsp;
+            <a routerLink="/recipes"  class="button">Recipe</a> &nbsp;&nbsp;&nbsp;
+            <a routerLink="/veg" class="button">veg</a> &nbsp;&nbsp;&nbsp;
+            <a routerLink="/nonveg"  class="button">Non-veg</a> &nbsp;&nbsp;&nbsp; -->
+            <a routerLink="/homepage" class="button">Logout</a> &nbsp;&nbsp;
+
+        </ul>
+        <div class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+
+
+      </nav><br><br>
+    <div class="veg-container">
+        <div class="col-md-6 mt-2">
+            <form [formGroup]="recipeGroup">
+
+                <div class="form-group">
+                    <label for="recipe_Name"><b>Recipe Name</b></label>
+                    <input type="text" placeholder="Enter Recipe Name" formControlName="recipe_Name" class="form-control" />
+                    <div style="color: red;" *ngIf="recipeGroup.controls.recipe_Name.errors && recipeGroup.controls.recipe_Name.touched"> enter Recipe Name </div>
+                </div> <br>
+
+                <div class="form-group">
+                  <label for="ingredient"><b>Recipe ingredent</b></label>
+                  <input type="text" placeholder="Enter Recipe ingredent" formControlName="ingredient" class="form-control" />
+                  <div style="color: red;" *ngIf="recipeGroup.controls.ingredient.errors && recipeGroup.controls.ingredient.touched"> enter Recipe ingredent </div>
+              </div>
+
+              <div class="form-group">
+                  <label for="procedure"><b>Recipe Procedure</b></label>
+                  <input type="text" placeholder="Enter Recipe procedure" formControlName="procedure" class="form-control" />
+                  <div style="color: red;" *ngIf="recipeGroup.controls.procedure.errors && recipeGroup.controls.procedure.touched"> enter Recipe procedure </div>
+              </div>
+              <div class="mb-3">
+                <!--<label for="exampleInputPassword1" class="form-label">Resume</label>
+                <input type="file" formControlName="resume" class="form-control" accept=".pdf,.doc,.docx" id="exampleInputPassword1"required>
+                <div *ngIf="formValue.invalid && formValue.touched">Required</div> -->
+
+                <label for="recipeimages" class="form-label"><b>RecipeImages</b></label>
+                  <input type="file" id="file" name="file" formControlName="recipeimages" class="form-control" (change)="onFileSelected($event)" accept=".jpg,.png">
+
+              </div>
+
+                <br>
+                <div id="home">
+                    <input type="button" value="Add Recipe" (click)="postData()" class="btn"/>
+                    <a [routerLink]="['/veg']" class="btn2">Back</a>
+                </div>
+           </form>
+        </div>
+    </div>
+
+</section>

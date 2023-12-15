@@ -1,0 +1,83 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<nav>
+  <div class="logo">
+      <img src="../../assets/images/fu.jpg" >
+  </div>
+  <ul class="next">
+      <!-- <a routerLink="/login"  class="button ">Login</a> &nbsp;&nbsp;&nbsp;
+      <a routerLink="/registration"  class="button ">registration</a> &nbsp;&nbsp;
+      <a routerLink="/recipes"  class="button">Recipe</a> &nbsp;&nbsp;&nbsp;
+      <a routerLink="/veg" class="button">veg</a> &nbsp;&nbsp;&nbsp;
+      <a routerLink="/nonveg"  class="button">Non-veg</a> &nbsp;&nbsp;&nbsp;-->
+      <a routerLink="/homepage" class="button">Back</a> &nbsp;&nbsp;
+
+  </ul>
+  <!-- <div class="icon">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-solid fa-heart"></i>
+      <i class="fa-solid fa-cart-shopping"></i>
+  </div> -->
+
+
+</nav>
+
+
+<div class="center-container">
+    <div class="login-container col-md-6">
+      <div class="wrapper two">
+        <div class="neon">
+          <h2>Login Page</h2>
+        </div>
+      </div>
+
+      <form [formGroup]="loginGroup">
+        <div class="form-group">
+          <label>Email</label>
+          <input
+            type="email"
+            placeholder="Enter Email"
+            formControlName="email"
+            class="form-control"
+          />
+          <div
+            class="error-message"
+            *ngIf="
+              loginGroup.controls.email.errors &&
+              loginGroup.controls.email.touched
+            "
+          >
+            Please Enter a valid Email ID
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            formControlName="password"
+            class="form-control"
+          />
+          <div
+            class="error-message"
+            *ngIf="
+              loginGroup.controls.password.errors &&
+              loginGroup.controls.password.touched
+            "
+          >
+            Please Enter a valid Password
+          </div>
+        </div>
+
+        <div class="button-container">
+          <button class="btn btn-success"  (click)="validate()">Login</button>
+          <a [routerLink]="['/registration']" class="btn btn-info"
+            >New Customer? Register Here</a
+          >
+        </div>
+      </form>
+    </div>
+  </div>

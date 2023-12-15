@@ -1,0 +1,47 @@
+ <section id="Home">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <nav>
+      <div class="logo">
+          <img src="../../assets/images/fu.jpg" >
+      </div>
+      <div class="nav">
+            <input type="button" value="Home" routerLink="/homepage"  class="btn"/>
+              <input type="button" value="Veg" (click)="viewVeg()" class="btn"/>
+
+              <input type="button" value=" NonVeg" (click)="viewNonVeg()" class="btn"/>
+              <input type="button" value="Users" (click)="viewUser()" class="btn"/>
+              <a [routerLink]="['/homepage']" class="main_btn">LogOut</a>
+          </div>
+
+      </nav><br><br><br><br><br>
+
+
+<div class="menu" id="Menu">
+  <h1>Our<span>Menu</span></h1>
+
+     </div>
+
+
+     <!-- <div class="row mt-3"style="width:18rem; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr 1fr ; grid-gap:80px" > -->
+      <div class="row mt-3"style="width:16rem; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr 1fr ; grid-gap:80px" >
+      <div class="col" style="padding-left: 40px;" *ngFor="let recipess of recipes" >
+          <div class="card"  style=" width: 18rem; border-left: none; border-right: none; border-bottom: none; border-top: none;">
+              <h5 class="card-title"></h5>
+               <img class="card"  src="../../assets/images/{{recipess.recipeimages}}" alt="Card image cap" style="width: 18rem;" >
+
+           </div>
+       </div>
+    </div>
+    <div class="row mt-3"style="width:18rem; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr 1fr ; grid-gap:80px" >
+      <div class="col" style="padding-left: 40px;" *ngFor="let recipesss of nonvegrecipe" >
+          <div class="card"  style=" width: 18rem; border-left: none; border-right: none; border-bottom: none; border-top: none;">
+              <h5 class="card-title"></h5>
+               <img class="card"  src="../../assets/images/{{recipesss.recipeimages}}" alt="Card image cap" style="width: 18rem;" >
+
+           </div>
+       </div>
+    </div>
+
+

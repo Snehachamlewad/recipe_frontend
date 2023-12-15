@@ -1,0 +1,160 @@
+nav{
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  right:0;
+  left:0;
+  background:purple;
+  box-shadow: 0 0 10px rgb(0,0,0,0.5);
+  z-index:1000;
+}
+ nav .logo img{
+  width: 100px;
+  height: 70px;
+  cursor: pointer;
+  margin:7px 0;
+  position: relative; 
+   overflow: hidden;
+    border-radius: 50%; } 
+  .logo img { width: 100%; height: auto;
+}
+ nav .next{
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  color:black ;
+  outline: none;
+
+}
+
+ nav .logo .next a:hover{
+  color: var(--pink);
+}
+ nav .next{
+  list-style: none;
+}
+ nav .next a{
+ display: inline-block;
+ margin: 0 15px ;
+ color:#000;
+  outline: none;
+  border: none;
+ text-decoration: none;
+ font-weight: 500;
+ font-size: 17px;
+ transition: 0.1s;
+}
+ nav .next a::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background: plum;
+  display: block;
+  transition: 0.2s linear;
+}
+ nav .next a:hover::after{
+ width: 100%;
+}
+
+nav .next a:hover{
+  color: plum;
+}
+
+
+  nav .icon i{
+   font-size: 18px;
+   color: #000;
+   margin: 0 5px;
+   cursor: pointer;
+   transition: 0.3s;
+  }
+  nav .icon i:hover{
+    color: plum;
+  }
+
+  section{
+    background-image: url("http://localhost:4200/assets/images/non.jpg");
+    background-size: cover;
+      background-position: center;
+      height: 100vh;
+  }
+
+  .form-group input{
+  width: 500px;
+  height: 40px;
+
+}
+
+.update {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200vh;
+  background: url("../../assets/images/non.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 0px;
+}
+ 
+.col-md-6 {
+  width: 600px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2em;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+ 
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+ 
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+ 
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; /* Darken the text color */
+}
+ 
+.form-group {
+  margin-bottom: 20px;
+}
+ 
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+ 
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+ 
+.btn-info {
+  margin-top: 10px;
+  background-color: purple; /* Change button color to a primary color */
+}
+ 
+.btn-primary {
+  width: 100%;
+  background-color:purple; /* Change button color to a success color */
+  color: #fff; /* Text color */
+  margin-top: 15px;
+  cursor: pointer; /* Add a pointer cursor on hover */
+}
+ 
+.btn-primary:hover {
+  opacity: 0.9;
+  background-color: plum;
+}

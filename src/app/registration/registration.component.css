@@ -1,0 +1,167 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+nav{
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  right:0;
+  left:0;
+  background:purple;
+  box-shadow: 0 0 10px rgb(0,0,0,0.5);
+  z-index:1000;
+}
+ nav .logo img{
+  width: 100px;
+  height: 70px;
+  cursor: pointer;
+  margin:7px 0;
+  position: relative; 
+   overflow: hidden;
+    border-radius: 50%; } 
+  .logo img { width: 100%; height: auto;
+}
+ nav .next{
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  color:black ;
+  outline: none;
+
+}
+
+ nav .logo .next a:hover{
+  color: var(--pink);
+}
+ nav .next{
+  list-style: none;
+}
+ nav .next a{
+ display: inline-block;
+ margin: 0 15px ;
+ color:#000;
+  outline: none;
+  border: none;
+ text-decoration: none;
+ font-weight: 500;
+ font-size: 17px;
+ transition: 0.1s;
+}
+ nav .next a::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background: plum;
+  display: block;
+  transition: 0.2s linear;
+}
+ nav .next a:hover::after{
+ width: 100%;
+}
+
+nav .next a:hover{
+  color: plum;
+}
+
+
+   nav .icon i{
+   font-size: 18px;
+   color: #000;
+   margin: 0 10px;
+   cursor: pointer;
+   transition: 0.3s;
+  }
+  nav .icon i:hover{
+    color: plum;
+  }
+section{
+  background-image: url("http://localhost:4200/assets/images/non.jpg");
+  background-size: cover;
+    background-position: center;
+}
+
+  .container {
+   height: 200vh;
+    width: 700%;
+    padding: 100px;
+    padding-left: 320px;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+   
+    
+  }
+  h1{
+    padding-left: 150px;
+    color: purple;
+  }
+   .container h1{
+    margin: 10px;
+  
+   }
+  .col-md-6 {
+    width: 600px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+   
+  .wrapper.two {
+    font-size: 2rem;
+    font-family: "Play", sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+   
+  .neon h2 {
+    margin: 1rem auto;
+    animation: neon 1s ease infinite;
+  }
+   
+  .form-group {
+    margin-bottom: 20px;
+  }
+   
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+   
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+   
+  .error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+   
+  .btn{
+    background-color: purple;
+    color: #fff;
+  }
+   
+  .btn:hover {
+    background-color: plum;
+    color: #000;
+  }
+   
+  .btn:hover {
+    opacity: 0.9;
+  }
+  .btn::after{
+    background-color: purple;
+  }
+  

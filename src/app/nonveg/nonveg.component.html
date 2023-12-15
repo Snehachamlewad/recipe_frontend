@@ -1,0 +1,48 @@
+<section>
+
+<nav class="navbar">
+    <div class="container-fluid">
+        <a [routerLink]="['/recipes']" class="btn">Back</a> <br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <div class="wrapper two">
+            <div class="neon">
+                <h2> List of Non-Veg Recipes </h2>
+            </div>
+        </div>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+         <input type="button" value="Add Recipe" (click)="addRecipe()" class="btn"/> &nbsp;&nbsp;
+    </div>
+</nav>
+<br> <br>
+
+<table class="nonveg" border="5" >
+    <thead>
+        <tr>
+            <th scope="col">Recipe_Id</th>
+            <th scope="col">Recipe_Name</th>
+            <th scope="col">Recipe_ingredent</th>
+            <th scope="col">Recipe_procedure</th>
+            <th scope="col">Recipe_Images</th>
+        </tr>
+    </thead>
+
+    <tbody>
+           <tr *ngFor="let non of nonVegList">
+            <td>{{non.recipe_Id}}</td>
+            <td>{{non.recipe_Name}}</td>
+            <td>{{non.ingredient}}</td>
+            <td>{{non.procedure}}</td>
+            <td>{{non.recipeimages}}</td>
+            <td> <input type="button" value="Delete" (click)="deleteRecipe(non.recipe_Id)" class="next"/> </td>
+            <td> <input type="button" value="Update" (click)="EditNonVeg(non)" class="next"/> </td>
+          </tr>
+    </tbody>
+</table>
+
+
+</section>
